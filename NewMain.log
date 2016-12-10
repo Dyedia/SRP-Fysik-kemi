@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.18)  10 DEC 2016 15:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.18)  10 DEC 2016 16:50
 entering extended mode
 **NewMain.tex
 (C:\Users\Dyedia\SRP-Fysik-kemi\NewMain.tex
@@ -1373,22 +1373,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 406--408
 
  []
 
-[5]
+[5] [6]
 \tf@thm=\write7
- [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
+ [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 492.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
  (C:\Users\Dyedia\SRP-Fysik-kemi\NewMain.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 431.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 431.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
 Package rerunfilecheck Info: File `NewMain.out' has not changed.
-(rerunfilecheck)             Checksum: 445E9C9F5BDEB869896E90E989D73C49;583.
+(rerunfilecheck)             Checksum: D56182CBAC07EDBF20E1D31E32E0B954;667.
  ) 
 Here is how much of TeX's memory you used:
- 26196 strings out of 493921
- 507702 string characters out of 3147279
+ 26208 strings out of 493921
+ 507844 string characters out of 3147279
  663839 words of memory out of 3000000
- 28989 multiletter control sequences out of 15000+200000
+ 28999 multiletter control sequences out of 15000+200000
  14298 words of font info for 55 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  54i,9n,77p,1073b,1023s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1404,9 +1404,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on NewMain.pdf (6 pages, 177939 bytes).
+Output written on NewMain.pdf (7 pages, 184790 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
