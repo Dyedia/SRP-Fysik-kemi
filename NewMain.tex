@@ -578,10 +578,87 @@ Eksemplet der vil blive betragtet i dette kapitel er oscillerende bevægelse, de
 \end{tikzpicture}
 \end{center}
 
-Med udgangspunkt i figur 7 vil vi se på en masse der i den ene ende er fastgjort til noget stationært og i den anden ende er fastgjort til en kugle med en masse. Når kuglen ikke påvirkes af andre ydre kræfter en tyngdekraften vil kuglen opnå en hviletilstand hvor fjederkraften er lige så stor som tyngdekraften. Vi sætter denne hviletilstand til $x_0=0$. Når vi så begynder at påvirke system med en ydre kraft ved f.eks. at hive i kuglen vil fjederen svare tilbage ved at trække endnu hårdere i kuglen. Hvis vi op som den positive retning vil vi på figur 7 have flyttet kuglen en afstand $-x$ væk fra sin hvileposition vil fjederkraften givet ved Hookes lov, der blev beskrevet i 2.1.2 være givet ved $F=-k \cdot x$. Hvor F er fjedekraften, k er fjederkonstanten for den givne fjeder og x er afstanden flyttet fra hvilepositionen $x_0$
+Med udgangspunkt i figur 7 vil vi se på en masse der i den ene ende er fastgjort til noget stationært og i den anden ende er fastgjort til en kugle med en masse. Når kuglen ikke påvirkes af andre ydre kræfter en tyngdekraften vil kuglen opnå en hviletilstand hvor fjederkraften er lige så stor som tyngdekraften. Vi sætter denne hviletilstand til $x_0=0$. Når vi så begynder at påvirke system med en ydre kraft ved f.eks. at hive i kuglen vil fjederen svare tilbage ved at trække endnu hårdere i kuglen. Hvis vi op som den positive retning vil vi på figur 7 have flyttet kuglen en afstand $-x$ væk fra sin hvileposition vil fjederkraften givet ved Hookes lov, der blev beskrevet i 2.1.2 være givet ved $F_x=-k \cdot x$. Hvor F er fjedekraften, k er fjederkonstanten for den givne fjeder og x er afstanden flyttet fra hvilepositionen $x_0$
 \\
 
+\subsubsection{Udledning af frekvens og positionsfunktion for harmonisk bevægelse}
 
+Antag nu at Hookes lov gælder og at bevægelsen udelukkende foregår i y-aksens retning. Newton II giver da 
+
+\bigskip
+
+\begin{center}
+$F_x = -k \cdot x = m \cdot a_x = m \cdot x'' \rightarrow a_x = -\dfrac{k}{m} \cdot x$
+\end{center}
+
+\bigskip
+
+Hvis massen, m, af objektet der er fæstnet til fjederen er konstant er størrelsen $\dfrac{k}{m}$ bare en konstant og da er $a_x \propto x$ til et hvert tidspunkt. Ud fra dette kan vi se at accelerationen er størst når x har opnået sin højeste positive værdi, kald denne størrelse $x_{max}$. Ydermere vil accelerationen være lig 0 når objketet passerer sit hvilepunkt, da x er lig 0 i det punkt.
+\pagebreak
+
+Der bruges nu princippet om energibevarelse med den potentielle energi af systemet givet ved $V=\dfrac{1}{2} \cdot k \cdot x^2$, ligesom i afsnit 2.1.2 om Hookes lov, og den kinetiske energi af systemet givet ved $E_kin = \dfrac{1}{2} \cdot m \cdot v^2$.
+
+\bigskip
+
+\begin{center}
+$E_{system}=\dfrac{1}{2} \cdot m \cdot v^2 + \dfrac{1}{2} \cdot k \cdot x^2 = konstant$
+\end{center}
+
+\bigskip
+
+Den totale energi $E_{system}$ er ydermere også relateret til amplituden af $x_{max}$ sådan at når objektet når sin maksimale flytning $\pm x_{max}$ vil objektet stoppe og vende om. I dette punkt hastigheden $v = 0$ og objektet har altså ikke nogen kinetisk energi. I dette punkt er $E_{system } = \dfrac{1}{2} \cdot k \cdot x^2$. Derfor må det gælde at
+
+\bigskip
+\begin{center}
+$E_{system}=\dfrac{1}{2} \cdot m \cdot v^2 + \dfrac{1}{2} \cdot k \cdot x^2 = \dfrac{1}{2} \cdot k \cdot (x_{max})^2$
+\end{center}
+\bigskip
+
+eller 
+
+\bigskip
+\begin{center}
+$\dfrac{1}{2} \cdot m \cdot v^2 + \dfrac{1}{2} \cdot k \cdot x^2 = \dfrac{1}{2} \cdot k \cdot (x_{max})^2 \rightarrow m \cdot v^2 = k \cdot (x_{max})^2 - k \cdot x^2 = k \cdot ((x_{max})^2 - x^2)$
+
+$\rightarrow v^2 = \dfrac{k}{m} \cdot ((x_{max})^2 - x^2) \rightarrow v = \pm \sqrt[2]{\dfrac{k}{m}} \cdot \sqrt[2]{(x_{max})^2-x^2}$
+\end{center}
+\bigskip
+
+Med forbehold for fortegnet kan vi bruge denne relation til at bestemme hastigheden af objektet til en hver position x. 
+
+\begin{center}
+\begin{tikzpicture}[scale=2]
+\shade[top color=purple,bottom color=white] (-1.49,0) rectangle (1.49,1.6);
+
+  \shade[top color=white,bottom color=white!50] 
+      (0,0) parabola (1.5,1.65) |- (0,0);
+\shade[top color=white,bottom color=white!50] 
+      (0,0) parabola (-1.5,1.65) |- (0,0);      
+
+  \draw[-latex] (-3,0) -- (3,0) node[above] {$x$};
+  \draw[->] (0,-0.2) -- (0,4) node[above] {Energi};
+
+  \draw (0,0) parabola bend (0,0) (2,3) node[below right] { };
+  
+  \draw (0,0) parabola bend (0,0) (-2,3) node[below right] { };
+  
+  \node[above] at (0,-0.5) {$x_0$};
+  \draw[-latex] (-3,0) -- (3,0) node[above] {$x$};
+	\draw[thick, dashed] (1,0.75) -- (1,1.6) node [midway, left] {$E_{kin}$};
+	
+	\draw[-latex] (-3,0) -- (3,0) node[above] {$x$};
+	\draw[thick, dashed] (1,0.75) -- (1,-0.03) node [midway, left] {$V$};
+	
+	\draw[thick, dashed] (-1.5,0) -- (-1.5,1.63) node [midway, left] {$E_{system}$};
+	
+	\node[below] at (-1.5,0) {$-x_{max}$};
+	
+\draw[thick, dashed] (1.5,0) -- (1.5,1.63) node [midway, left] { };	
+
+\node[below] at (1.5,0) {$x_{max}$};
+	
+\end{tikzpicture}
+\end{center}
 
 
 
