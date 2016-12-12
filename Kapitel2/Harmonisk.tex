@@ -1,0 +1,22 @@
+\subsection{Harmoniske svingninger}\label{teori: Harmoniske svingninger}
+En oscillerende bevægelse er en bevægelse hvor et objekt, som bliver flyttet fra sit hvilested og sluppet vil bevæge sig tilbage mod sit hvilested, hvor det vil bevæge sig forbi sit hvilested for igen at foretage gentagelser af netop dette for til slut at ende på sit hvilested igen. Dette kan eksempelvis ses hos penduler og masser bundet til fjedre.
+\\
+
+Eksemplet der vil blive betragtet i dette kapitel er oscillerende bevægelse, der er hensigtsmæssig i forhold til at forstå IR-spektroskopier. Vi vil se på en masse der er bundet til en fjeder. Se figur 7.
+
+\begin{center}
+\begin{tikzpicture}
+\node[circle,fill=gray,inner sep=2.5mm] (a) at (0,0) {};
+\node[circle,fill=gray,inner sep=2.5mm] (b) at (2,2) {};
+\draw[decoration={aspect=0.3, segment length=3mm, amplitude=3mm,coil},decorate] (0,5) -- (a); 
+\draw[decoration={aspect=0.3, segment length=1.5mm, amplitude=3mm,coil},decorate] (2,5) -- (b); 
+\fill [pattern = north east lines] (-1,5) rectangle (3,5.2);
+\draw[thick] (-1,5) -- (3,5);
+
+\draw[-latex] (-1,2)--(-1,0) node[left]{$x$};
+
+\end{tikzpicture}
+\end{center}
+
+Med udgangspunkt i figur 7 vil vi se på en masse der i den ene ende er fastgjort til noget stationært og i den anden ende er fastgjort til en kugle med en masse. Når kuglen ikke påvirkes af andre ydre kræfter en tyngdekraften vil kuglen opnå en hviletilstand hvor fjederkraften er lige så stor som tyngdekraften. Vi sætter denne hviletilstand til $x_0=0$. Når vi så begynder at påvirke system med en ydre kraft ved f.eks. at hive i kuglen vil fjederen svare tilbage ved at trække endnu hårdere i kuglen. Hvis vi op som den positive retning vil vi på figur 7 have flyttet kuglen en afstand $-x$ væk fra sin hvileposition vil fjederkraften givet ved Hookes lov, der blev beskrevet i 2.1.2 være givet ved $F_x=-k \cdot x$. Hvor F er fjedekraften, k er fjederkonstanten for den givne fjeder og x er afstanden flyttet fra hvilepositionen $x_0$
+\\
