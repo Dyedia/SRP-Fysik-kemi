@@ -52,7 +52,53 @@ Men da er frekvensen for en harmonisk oscillator er givet ved formlen
 \={v}$= \dfrac{1}{2 \pi c} \sqrt[2]{\dfrac{K}{\mu}}$
 \end{center}
 
-Denne formel er udledt fra Hookes lov for vibrerende fjedre. (FODNOTE TIL s8 spectroscopy). her er K, fjederkonstanten, \={v} er bølgetallet og $\mu$ er den reducerede masse givet ved formlen $\mu = \frac{m_1 m_2}{m_1 + m_2}$. Vi vil lige diskutere betydningen af K. 
+Denne formel er udledt fra Hookes lov for vibrerende fjedre. (FODNOTE TIL s8 spectroscopy). her er K, fjederkonstanten, \={v} er bølgetallet og $\mu$ er den reducerede masse givet ved formlen $\mu = \frac{m_1 m_2}{m_1 + m_2}$. 
+\\
+
+Da det ikke altid er lige praktisk at bruge massen af atomer til at finde bølgetallet, kan man i stedet omskrive lidt på formlen således at der kan regnes på molarmassen af de to atomer i stedet for deres masse.
+\\
+
+I stedet for $\mu = \dfrac{m_1 m_2}{m_1 + m_2}$ kan vi skrive $\mu = \dfrac{m_1 m_2}{m_1 + m_2} = \dfrac{M_1 M_2}{(M_1 + M_2 ) (6.02 \cdot 10^{23})}$. 
+\\
+
+Vi kan altså udtrykket masserne som molarmasser ved at dividere $\mu$ udtrykt ved masse, med Avogadros tal $N_A$.
+\\
+
+Avogadros tal flyttes ud foran kvadratrodstegnet ved at tage kvadratroden af det og putte det i tælleren på den første brøk således at der står:
+
+\begin{center}
+\={v}$(cm^{-1})=\dfrac{\sqrt[2]{6.02 \cdot 10^{23}}}{2 \pi c} \cdot \sqrt[2]{\dfrac{K}{\mu}} = \dfrac{7.76 \cdot 10^{11}}{2 \pi c} \cdot \sqrt[2]{\dfrac{K}{\mu}}$
+\end{center}
+
+Her er $\mu$ ikke massen længere, men \emph{molarmassen}.
+\\
+
+Udtrykket kan reduceres yderligere ved at udregne værdien af den  første brøk, så vi får formlen
+
+\begin{center}
+\={v}$=4.12 \sqrt[2]{\dfrac{K}{\mu}}$
+\end{center}
+
+Hvor $\mu$ er den reduerede molarmasse og K er fjeder- eller kraftkonstant for systemet i \emph{dynes} per. centimeter. Dynes er mål for kraft. $10^5$  $dynes = 1N$.
+\\
+
+Som en approksimation bruger vi respektivt K = 5, 10, 15 $\cdot 10^5 \frac{dynes}{cm}$ for enkelt, dobbelt og trippeltbindinger.
+\\
+
+For at validere denne formel vil vi se på 2 eksempler hvor bølgetallet er bestemt gennem et eksperiment og ved brug af formlen. Vi betragter først dobbeltbindingen mellem carbonatomerne i ethen.
+\\
+
+Det bølgetal, der er bestemt ved forsøg er \={v}$=1650cm^{-1}$(FODNOTE). Hvis vi bruger formlen til at regne bølgetallet ud får vi: $4.12 \cdot \sqrt[2]{\dfrac{10 \cdot 10^5}{(\dfrac{12 \cdot 12}{12 +12})}} = 1682 cm^{-1}$. 
+\\
+
+Et andet eksempel er bindingen mellem et carbonatom og et hydrogenatom. Her er der tale om en enkeltbinding og vi bruger da $K=5 \cdot 10^5 \frac{dynes}{cm}$ og en $\mu = \frac{12 \cdot 1}{12 + 1} = 0.9231$. Putter vi det ind i formlen får vi et bølgetal på: $4.12 \cdot \sqrt[2]{\dfrac{5 \cdot 10^5}{0.9231}} \approx 3032 cm^{-1}$. Bølgetallet for en stræk mellem C og H er ved forsøg bestemt til at være 3000. 
+\\
+
+Formlen giver os altså et godt bud på hvor vi kan forvente at se bølgetal for stræk mellem to atomer.
+\\
+
+
+Vi vil lige diskutere betydningen af K samt hvad der har indflydelse på størrelsen. 
 \subsection{Fjederkonstanten for bindingen mellem diatomiske molekyler}
 
 I normale fjedre vil fjederkonstanten, som navnet antyder, være konstant lige gyldigt hver vi hænger i den. Dette gør sig egentligt også gældende for de kovalente bindinger mellem molekyler, hvis de vel at mærke er underlagt præcist de samme betingelser. Så kovalente bånd er ikke én fjeder, men adskillige vis af forskellige fjedre og dette er utroligt vigtigt at have i mente, når vi skal se på forskellige værdier af K.
@@ -64,7 +110,13 @@ Et større K medfører et større bølgetal, da tælleren bliver større og vær
 \begin{enumerate}
 \item Det gælder som en grov regel at værdien af fjederkonstanten, K, er tre gange så høj for tripeltbindinger som for enkeltbindinger og at K er dobbelt så høj for dobbeltbindinger som for enkeltbindinger. Vi sætter disse værdier af K til at være henholdsvis 5, 10 og 15 for enkelt-, dobbelt- og trippeltbindinger. Vi vil senere diskutere i hvor stor grad denne grove fingerregel for beregninger af bølgetal holder.
 
-\item Hybdridisering har også en effekt på værdien af K. Som en regel er 
+\item Hybdridisering har også en effekt på værdien af K. Som regel er bond stærkere i rækkefølgen $sp > sp^2 > sp^3$. Dette kan vi se hvis vi betragter enkeltbundne, dobbeltbundne og trippeltbundne carbonatomer, der også binder sig til et hydrogenatom:
+
+\begin{center}
+\includegraphics[scale=1]{Billeder/sp}
+\end{center}
+
+
 \end{enumerate}
 
 For det andet vil store atomer der er bundet til atomer der er relativt mindre til dem selv vibrerer ved højere frekvenser da værdien af $\mu$ vil være mindre og gøre $\sqrt[2]{\dfrac{K}{\mu}}$ større. 
@@ -77,9 +129,3 @@ Vi kan tjekke om dette passer ved at slå op i en databog og se på bølgetal fo
 Vi kan se jo større et atom som carbon er bundet til jo større bliver $\mu$ og derfor også bølgetallet \={v}.
 
 Bevægelser mellem atomer, der er bøjende vil også optræde ved en lavere energi, og altså også ved et lavere \={v}, end de strækkende bevægelser. Eksempelvis vil C-H stræk give udslag ved et bølgetal på ca. 3000 $cm^{-1}$ mens C-H bøj vil give et udsalg omkring $1340cm^{-1}$.
-
- what a meme
-
-
-
-
