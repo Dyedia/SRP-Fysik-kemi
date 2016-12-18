@@ -1,13 +1,13 @@
 \section{MO-teori og hybridisering}
-memes\refUniphys{186})
-I molekylær orbital teori ses der på fordelingen af elektroner i molekyler på samme måde som vi ser på fordelingen af elektroner i atomer.\refUniphys{186}) Måden hvorpå vi bestemmer hvordan en elektron opfører sig på i et molekyle er ved hjælp af kvantemekanik og en bølgefunktion $\Psi$. På denne måde kan energien af en elektron og formen på det område hvori en elektron bevæger sig i bestemmes. Dette vil jeg kun berøre sporadisk. Som vi i afsnit \ref{elektroner} fandt ud af, i hvilke områder elektroner havde størst chance for at eksistere. Disse områder kaldte vi orbitaler. På samme måde som atomer har molekyler også orbitaler hvor elektronerne har en stor chance for at blive fundet i. Forskellen på atomer og molekyler er, at elektroner i molekyler kan findes nær en hvilken som helst kerne i molekylet i stedet for den ene kerne, som orbitalen hører til for et atom. Dette er netop hvorfor vi kalder disse orbitaler for molekylære elektronorbitaler eller bare molekylære orbitaler. Ligesom atomare orbitaler er molekyære orbitaler også fyldt når de indeholder præcist 2 orbitaler med modsat spin. 
+I molekylær orbital teori ses der på fordelingen af elektroner i molekyler på samme måde som vi ser på fordelingen af elektroner i atomer.\refUniphys{186}) Måden hvorpå vi bestemmer hvordan en elektron opfører sig på i et molekyle er ved hjælp af kvantemekanik og en bølgefunktion $\Psi$. På denne måde kan energien af en elektron og formen på det område hvori en elektron bevæger sig i bestemmes. Dette vil jeg kun berøre sporadisk. Som vi i afsnit \ref{elektroner} fandt ud af, havde elektroner nogle områder hvori de havde den størst mulige change for at blive fundet i. Disse områder kaldte vi orbitaler. På samme måde som atomer har molekyler også orbitaler hvor elektronerne har en stor chance for at blive fundet i. Forskellen på atomer og molekyler er, at elektroner i molekyler kan findes nær en hvilken som helst kerne i molekylet i stedet for den ene kerne, som orbitalen hører til for et atom. Dette er netop hvorfor vi kalder disse orbitaler for molekylære elektronorbitaler eller bare molekylære orbitaler. Ligesom atomare orbitaler er molekyære orbitaler også fyldt når de indeholder præcist 2 orbitaler med modsat spin. 
 \\
 
-Da vi så de atomare orbitaler gav vi dem navnene, s,p,d og f. Molekylære orbitaler har også navne, men der vil i denne opgave ligge et fokus på $\pi$-orbitaler og $\sigma$-orbitaler. Lad os som eksempel betragte et eksempel på et homonukleært diatomisk molekyle som $H_2$. De to hydrogenatomer der er bundet sammen har hver deres egen elektron, men når de er sig tilpas tæt nok på hinanden vil elektronerne befinde sig mere eller mindre mellem de to kerner. Da elektronerne er negativt ladede og de 2 hydrogenkerner er positivt ladede, vil elektronerne blive tiltrukket af begge kerner og have et lavere niveau af energi end de ville have isolerede.(REFERENCE) Da elektronerne søger at have en så lav energi som muligt vil de befinde sig mellem de to kerner og stabilisere molekylet. Denne slags orbitaler kaldes \textbf{bindende} orbitaler, da de som navnet antyder binder molekylet sammen. Da der stadigvæk kun er plads til 2 atomer i i en orbital, vil elektroner der ikke kan indgå i bindende orbitaler indgå i anti-bindende orbitaler. Disse orbitaler er med til at destabilisere molekyler og er en af grundene til at alle atomer kan gå i forbindelse med hinanden. De anti-bindende orbitaler findes ved at tage to orbitaler der overlapper hinanden og fjerne deres overlap. Nu er orbitalen ikke mellem atomerne mere og vil derfor ikke stabilisere molekylet længere. På figur\ref{sigmaorbital} er det illustreret hvordan to atomare orbitaler går sammen om at danne en bindende $\sigma_s$ orbital. 
+Da vi så de atomare orbitaler gav vi dem navnene, s,p,d og f. Molekylære orbitaler har også navne, men der vil i denne opgave ligge et fokus på $\pi$-orbitaler og $\sigma$-orbitaler. Lad os som eksempel betragte et eksempel på et homonukleært diatomisk molekyle som $H_2$. De to hydrogenatomer der er bundet sammen har hver deres egen elektron, men når de er sig tilpas tæt nok på hinanden vil elektronerne befinde sig mere eller mindre mellem de to kerner. Da elektronerne er negativt ladede og de 2 hydrogenkerner er positivt ladede, vil elektronerne blive tiltrukket af begge kerner og have et lavere niveau af energi end de ville have isolerede.\refUniKemi{151} Da elektronerne søger at have en så lav energi som muligt vil de befinde sig mellem de to kerner og stabilisere molekylet. Denne slags orbitaler kaldes \textbf{bindende} orbitaler, da de som navnet antyder binder molekylet sammen. Da der stadigvæk kun er plads til 2 atomer i i en orbital, vil elektroner der ikke kan indgå i bindende orbitaler indgå i anti-bindende orbitaler. Disse orbitaler er med til at destabilisere molekyler og er en af grundene til at alle atomer kan gå i forbindelse med hinanden. De anti-bindende orbitaler findes ved at tage to orbitaler der overlapper hinanden og fjerne deres overlap. Nu er orbitalen ikke mellem atomerne mere og vil derfor ikke stabilisere molekylet længere. På figur\ref{fig:sigmabinding} er det illustreret hvordan to atomare orbitaler går sammen om at danne en bindende $\sigma_s$ orbital. 
+
 \begin{center}
 \begin{figure}[ht!]
   \centering
-  \begin{tikzpicture}[scale=2]
+  \begin{tikzpicture}[scale=1.5]
   \begin{scope}[font=\itshape]% 
 
   \draw[-latex] (0,-1)--(0,1) node[above]{Stigende energi};
@@ -15,8 +15,8 @@ Da vi så de atomare orbitaler gav vi dem navnene, s,p,d og f. Molekylære orbit
   \orbital[color = purple, opacity = 1, scale = 2, pos = {(2,0.65)}]{s} 
   \node[above] at (1,0.5) {+};  
   \node[above] at (2,0.5) {+};
-  \node[above] at (1,0) {s orbital};
-  \node[above] at (2,0) {s orbital};
+  \node[above] at (0.9,-0.15) {s orbital};
+  \node[above] at (2.1,-0.15) {s orbital};
 	\draw[-latex] (2.5,0.65)--(3.5,-0.10);
  		
  		
@@ -34,56 +34,21 @@ Da vi så de atomare orbitaler gav vi dem navnene, s,p,d og f. Molekylære orbit
   (current bounding box.north east);
   \end{pgfonlayer}
   \end{tikzpicture}
-  \caption{1s orbital}
-   \end{figure}\label{sigmaorbital}
+  \caption{Sigma-binding \label{fig:sigmabinding}}
+   \end{figure}
 	\end{center}
-   
+
 Når to atomare orbitaler går sammen om at danne en ny orbital kalder vi det en hybridisering. En $\sigma$-binding er altså en hybridorbital.
 \\
 
 En $\sigma$-orbital er også det vi kender som en $\sigma$-binding eller en type kovalent binding. Kovalente bindinger er defineret som molekylære bindinger, der involverer en deling af elektroner mellem to atomer.
 \\
 
-På samme måde som med $\sigma$-orbitalerne dannes $\pi$-orbitalerne ved, at to atomers befinder sig tæt på hinanden og elektronerne kan få en lavere energi ved at befinde sig i det sted hvor orbitalerne overlapper. Det græske bogstav $\pi$ refererer til p-orbitalerne. Dette er fordi $\pi$-orbitaler oftest ses dannet ud fra netop p-orbitaler, men det skal sige, at de også kan dannes ud fra d orbitaler. På figur (Mangler) ses hvordan 2 p-orbitaler går sammen om at danne en $\pi$-bindinger. 
-\begin{center}
-\begin{figure}[ht!]
-  \centering
-  \begin{tikzpicture}[scale=2]
-  \begin{scope}[font=\itshape]% 
-
-  \draw[-latex] (-0.5,-1)--(-0.5,1) node[above]{Stigende energi};
-  \orbital[pcolor = purple, opacity = 1, scale = 1, pos = {(1,0.65)}]{pz} 
-  \orbital[pcolor = purple, opacity = 1, scale = 1, pos = {(2,0.65)}]{pz} 
-  \node[above] at (0.8,-0.40) {$p_z-orbital$};
-  \node[above] at (2.2,-0.40) {$p_z-orbital$};
-	\draw[-latex] (2.5,0.65)--(3.5,-0.10);
-  \node[above] at (1,0.5) {+};
-  \node[above] at (2,0.5) {+};
- 		
- \orbital[color = purple, opacity = 1, scale = 2, pos = {(4,-0.5)}]{s} 
-  \orbital[color = purple, opacity = 1, scale = 2, pos = {(4.5,-0.5)}]{s}  	
-  
- \orbital[color = lightgray, opacity = 0.3, scale = 2, pos = {(4,-1)}]{s} 
-  \orbital[color = lightgray, opacity = 0.3, scale = 2, pos = {(4.5,-1)}]{s}  	  
-  	
-  \node[above] at (4.2,-2) {Bindende orbital $\pi_p$};
- 		
- 		
-  \node[above] at (4,-0.90) {+};
-  \node[above] at (4.5,-0.90) {+};		
- 		
-  \end{scope}
-
- \begin{pgfonlayer}{backbackground}
-  \fill[white](current bounding box.south west)rectangle
-  (current bounding box.north east);
-  \end{pgfonlayer}
-  \end{tikzpicture}
-  \caption{ $\pi - binding$} \end{figure}
-\end{center}
+På samme måde som med $\sigma$-orbitalerne dannes $\pi$-orbitalerne ved, at to atomers befinder sig tæt på hinanden og elektronerne kan få en lavere energi ved at befinde sig i det sted hvor orbitalerne overlapper. Det græske bogstav $\pi$ refererer til p-orbitalerne. Dette er fordi $\pi$-orbitaler oftest ses dannet ud fra netop p-orbitaler, men det skal sige, at de også kan dannes ud fra d orbitaler. På figur \ref{fig:ethen} ses hvordan 2 p-orbitaler går sammen om at danne en $\pi$-bindinger. 
 	
-Nu har vi set på både $\sigma$-orbitaler /bindinger og $\pi$-orbitaler / bindinger - men hver for sig. Hvis de to orbitaler eksisterer sammentidigt i et molekyle har vi faktisk en dobbeltbinding. Dobbeltbindinger er netop en $\sigma$- og en $\pi$-binding. Illustret som en tegning ville det se ud på følgende måde, se Figur 6: 
+Nu har vi set på både $\sigma$-orbitaler /bindinger og $\pi$-orbitaler / bindinger - men hver for sig. Hvis de to orbitaler eksisterer sammentidigt i et molekyle har vi faktisk en dobbeltbinding. Dobbeltbindinger er netop en $\sigma$- og en $\pi$-binding. Illustret som en tegning ville det se ud på følgende måde, se Figur \ref{fig:ethen}.
 
+\begin{figure}
 \begin{center}
 \begin{tikzpicture}[scale=0.75]
 
@@ -139,6 +104,8 @@ Nu har vi set på både $\sigma$-orbitaler /bindinger og $\pi$-orbitaler / bindi
 \node[above] at (0,-6.5){figur 6: };
 \end{tikzpicture}
 \end{center}
+\caption{Orbitaler i ethen \label{fig:ethen}}
+\end{figure}
 
 $\sigma$-bindingerne er de stærkestee af de kovalente bindinger. Dernæst kommer $\pi$-bindingerne. blabla MO teori...
 

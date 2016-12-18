@@ -1,0 +1,36 @@
+\begin{center}
+\begin{figure}[ht!]
+  \centering
+  \begin{tikzpicture}[scale=2]
+  \begin{scope}[font=\itshape]% 
+
+  \draw[-latex] (-0.5,-1)--(-0.5,1) node[above]{Stigende energi};
+  \orbital[pcolor = purple, opacity = 1, scale = 1, pos = {(1,0.65)}]{pz} 
+  \orbital[pcolor = purple, opacity = 1, scale = 1, pos = {(2,0.65)}]{pz} 
+  \node[above] at (0.8,-0.40) {$p_z-orbital$};
+  \node[above] at (2.2,-0.40) {$p_z-orbital$};
+	\draw[-latex] (2.5,0.65)--(3.5,-0.10);
+  \node[above] at (1,0.5) {+};
+  \node[above] at (2,0.5) {+};
+ 		
+ \orbital[color = purple, opacity = 1, scale = 2, pos = {(4,-0.5)}]{s} 
+  \orbital[color = purple, opacity = 1, scale = 2, pos = {(4.5,-0.5)}]{s}  	
+  
+ \orbital[color = lightgray, opacity = 0.3, scale = 2, pos = {(4,-1)}]{s} 
+  \orbital[color = lightgray, opacity = 0.3, scale = 2, pos = {(4.5,-1)}]{s}  	  
+  	
+  \node[above] at (4.2,-2) {Bindende orbital $\pi_p$};
+ 		
+ 		
+  \node[above] at (4,-0.90) {+};
+  \node[above] at (4.5,-0.90) {+};		
+ 		
+  \end{scope}
+
+ \begin{pgfonlayer}{backbackground}
+  \fill[white](current bounding box.south west)rectangle
+  (current bounding box.north east);
+  \end{pgfonlayer}
+  \end{tikzpicture}
+  \caption{ $\pi - binding$} \end{figure}
+\end{center}
