@@ -1,8 +1,18 @@
-\documentclass[12pt,a4paper,openany]{book}
+\documentclass[12pt,a4paper,openany, oneside]{book}
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\leftmark --- \rightmark}
+\cfoot{\thepage}
+\lfoot{Sebastian B. Hansen}
+\rfoot{3r, N\o rre Gymnasium}
+
 
 \usepackage{preamble}
 \usepackage{referencekommandoer}
-\author{Sebastian Borgund Hansen \\ 3r, Nørre Gymnasium}
+\author{Sebastian Borgund Hansen \\ 3r, Nørre Gymnasium \\ SRP Fysik - Kemi}
 \title{Infrarød-spektroskopi}
 \date{\today}
 
@@ -17,7 +27,9 @@
 \input{Kapitel1/Orbitaler}
 \input{Kapitel1/MO-teori}
 \input{Kapitel1/Piogsigmaorbital}
+\pagebreak
 \input{Kapitel1/Kovalentebindinger}
+
 %KAPITEL 2
 \input{Kapitel2/Arbejdeoghookslov}
 \input{Kapitel2/Udledninghook}
