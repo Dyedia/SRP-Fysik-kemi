@@ -12,16 +12,20 @@
 
 \usepackage{preamble}
 \usepackage{referencekommandoer}
+\usepackage{pdfpages}
 \author{Sebastian Borgund Hansen \\ 3r, Nørre Gymnasium \\ SRP Fysik - Kemi}
 \title{Infrarød-spektroskopi}
 \date{\today}
 
+
 \begin{document}
+\includepdf[pages=1]{Forside.pdf}
 \maketitle
+\input{Abstract}
 \tableofcontents
 
-%KAPITEL 1
 
+%KAPITEL 1
 \input{Kapitel1/Introduktion}
 \input{Kapitel1/Elektroner}
 \input{Kapitel1/Orbitaler}
@@ -38,4 +42,7 @@
 \input{Kapitel2/Forsoeg}
 \input{Kapitel2/Kemienbag}
 \input{Kapitel2/irspektre}
+\input{Kapitel2/Konklusion}
+\input{Kapitel2/LitListe}
+
 \end{document}
